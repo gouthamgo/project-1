@@ -19,6 +19,7 @@
    padding: 0;
    box-sizing: border-box;
    font-family: 'Poppins', sans-serif;
+   list-style: none;
 
  }
  nav{
@@ -124,7 +125,7 @@ header{
     font-size: 1.3rem;
     line-height: 1.7;
 }
-.header-title button{
+.header-title .button{
   background-color: transparent;
   border: 5px solid;
   color: white;
@@ -338,3 +339,26 @@ img{
     }
 }
 /* homepage -featured and others */
+
+
+.thumb{
+  width: 30em;
+}
+
+.aboutus{
+  width: cover;
+  height:70vh;
+  background-image: url("https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1110");
+  background-repeat: no-repeat;
+  margin:5px;
+
+}
+.about-content{
+  text-align:center;
+  position: relative;
+  top:140px;
+}
+
+.about-content h2{
+  color: grey;
+}

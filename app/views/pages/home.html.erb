@@ -4,7 +4,9 @@
                 <div class = "header-title">
                     <h1>Travel Aimlessly</h1>
                     <p>Open the Windows to your soul</p>
-                    <button type="button" name="button"> Book Now</button>
+                    <!-- <button type="button" name="button"> Book Now</button> -->
+
+                     <%= button_to "Book Now", items_path, :method => "get", :class =>  'button' %>
 
                 </div>
 
@@ -15,7 +17,7 @@
 
         <!-- featured section -->
               <section id = "featured" class = "py-4">
-                  <div class = "container">
+                  <div class = "container-1">
                       <div class = "title-wrap">
                           <span class = "sm-title">know about some places before your travel</span>
                           <h2 class = "lg-title">featured places</h2>
@@ -106,5 +108,15 @@
                           </div>
                       </div>
                   </div>
+
               </section>
               <!-- end of featured section -->
+
+
+      <div class="aboutus">
+        <div class="about-content">
+          <h1>About US</h1>
+          <h2>MEET THE WORLD'S LEADING TOUR COMPANY</h2>
+          <p>We connect you to real experiences across all 7 continents.</p>
+        </div>
+      </div>
