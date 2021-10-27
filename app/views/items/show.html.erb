@@ -1,0 +1,32 @@
+<%= link_to "Back", items_path %>
+<h1><%= @item.name %></h1>
+  <div class="flex">
+    <div class="description">
+      <%= image_tag @item.image, :class =>  'feature' if @item.image.present? %>
+    </div>
+      <br>
+      <div class="description">
+        <% if @item.user.present? %>
+
+
+        <% end %>
+          <h5>Description:</h5>
+            <%= @item.description %>
+
+              <h3><%= number_to_currency @item.price %></h3>
+
+              <ul>
+                <li>Name: <%= @item.name %></li>
+                <li>Price: <%= @item.price %></li>
+
+              </ul>
+
+
+                <div class="items-icons">
+                    <%= button_to "Add  to cart", line_items_path(:item_id => @item.id), :method => 'post' %>
+                    </div>
+
+
+
+        </div>
+  </div>

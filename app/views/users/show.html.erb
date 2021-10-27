@@ -1,0 +1,29 @@
+<h2><% if @user == @current_user %>
+      <%= 'My profile' %>
+        <% else %>
+      <%= @user.username %>'s profile</h2>
+    <% end %>
+      <br>
+
+        <p>Name:
+          <%= @user.name %>
+        </p>
+
+        </p>
+        <% if @user == @current_user  %>
+          <p>Email:
+            <%= @user.email %>
+          </p>
+          <p><%= link_to 'Edit profile', edit_user_path %>
+          <%= link_to 'Delete account', @user, :method => 'delete', :data => {:confirm => "Are you sure?"} %>
+          </p>
+
+          <br>
+      <% end %>
+
+        <% if @current_user.present? %>
+
+              <p>Coming soon</p>
+              <% elsif @current_user.nil? %>
+            <p><%=  link_to 'Sign up', new_user_path %> or <%=  link_to 'log in', login_path %> </p>
+        <% end %>

@@ -1,0 +1,29 @@
+<h4><%= link_to 'Back', items_path %></h4>
+
+<h2>My Cart</h2>
+  <div class="flex">
+          <% @cart.line_items.each do |line_item| %>
+            <div class="card">
+            <% if line_item.item %>
+              <%= image_tag(line_item.item.image, :class => 'icon')  %>
+              <br>
+               <%= link_to line_item.item.name, item_path(line_item.item_id) %>
+              <br>
+               Price: <%= number_to_currency(line_item.item.price) %>
+
+               <br>
+                  <%= link_to "Remove item", line_item_path(line_item), method: :delete %>
+                  </div>
+              <br>
+            <% end %>
+        <% end %>
+        <% if @cart.line_items.empty? %>
+        <h3>Cart is empty</h3>
+        <% end %>
+
+    </div>
+<hr>
+
+<h3>Total Price: <%= number_to_currency(@cart.total) %> </h3>
+<%= link_to 'Proceed to check out', new_order_path %>
+<%= link_to 'Empty cart', cart_path(@current_cart), method: :delete, data: {confirm: "Are you sure?"} %>
