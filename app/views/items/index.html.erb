@@ -1,14 +1,92 @@
-<h1>All items</h1>
-<div class="flex">
 
-  <% @items.each do |item| %>
-    <div class="card">
-      <%= link_to image_tag(item.image, :class => 'thumb'), item if item.image.present? %>
-      <br>
-      <%= link_to item.name, item %>
-      <br>
-      <%= number_to_currency(item.price) %>
+
+<div class="container-fluid text-center">
+    <div class="h1">Destinations on Nomadic</div>
+    <div class="row mt-5">
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="https://i.imgur.com/EzlCK0s.jpg">
+                <div class="card-block">
+                    <div class="card-title h3">Bali, Indonesia</div>
+                    <%= link_to "Explore", item_path(@items.find_by(name: "Bali, Indonesia").id), :class => "btn btn-primary" %>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="https://i.imgur.com/wHC6GXq.jpg">
+                <div class="card-block">
+                    <div class="card-title h3">Paris, France</div>
+                    <%= link_to "Explore", item_path(@items.find_by(name: "Paris, France").id), :class => "btn btn-primary" %>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="https://i.imgur.com/EGgCjIC.jpg">
+                <div class="card-block">
+                    <div class="card-title h3">Rome, Italy</div>
+                    <%= link_to "Explore", item_path(@items.find_by(name: "Rome, Italy").id), :class => "btn btn-primary" %>
+                </div>
+            </div>
+        </div>
     </div>
-  <% end %>
-
-</div>
+    <div class="row mt-5">
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="https://i.imgur.com/XnZPIyO.jpg">
+                <div class="card-block">
+                    <div class="card-title h3">London, United Kingdom</div>
+                    <%= link_to "Explore", item_path(@items.find_by(name: "London, United Kingdom").id), :class => "btn btn-primary" %>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="https://i.imgur.com/kgYxFhu.jpg">
+                <div class="card-block">
+                    <div class="card-title h3">Crete, Greece</div>
+                    <%= link_to "Explore", item_path(@items.find_by(name: "Crete, Greece").id), :class => "btn btn-primary" %>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="https://i.imgur.com/hFV13sL.jpg">
+                <div class="card-block">
+                    <div class="card-title h3">Barcelona, Spain</div>
+                    <%= link_to "Explore", item_path(@items.find_by(name: "Barcelona, Spain").id), :class => "btn btn-primary" %>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row my-5">
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="https://i.imgur.com/zVHD1aP.jpg">
+                <div class="card-block">
+                    <div class="card-title h3">Siem Reap, Cambodia</div>
+                    <%= link_to "Explore", item_path(@items.find_by(name: "Siem Reap, Cambodia").id), :class => "btn btn-primary" %>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="https://i.imgur.com/VQF5aDX.jpg">
+                <div class="card-block">
+                    <div class="card-title h3">Prague, Czech Republic</div>
+                    <%= link_to "Explore", item_path(@items.find_by(name: "Prague, Czech Republic").id), :class => "btn btn-primary" %>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top" src="https://i.imgur.com/zWbPSF9.jpg">
+                <div class="card-block">
+                    <div class="card-title h3">Phuket, Thailand</div>
+                    <%= link_to "Explore", item_path(@items.find_by(name: "Phuket, Thailand").id), :class => "btn btn-primary" %>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="container-fluid text-center">

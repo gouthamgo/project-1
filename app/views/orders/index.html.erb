@@ -9,7 +9,9 @@
       <% order.line_items.each do |item| %>
         <ul>
           <li><p><%= item.item.name %> / <%= number_to_currency item.item.price %></li></p>
+
         </ul>
       <% end %>
     </ul>
+    
   <% end%>

@@ -63,6 +63,25 @@ i6 = Item.create({:name=>"London, United Kingdom", :price => 8.20, :description 
     Sherlock Holmes Museum.", :image => "https://i.imgur.com/SApO7Jn.jpg"})
 
 
+    i7 = Item.create({:name=>"Paris, France", :price => 5.20, :description => "Lingering over pain au chocolat in a sidewalk café, relaxing after a day
+    of strolling along the Seine and marveling at icons like the Eiffel Tower and the Arc de Triomphe… the perfect Paris experience combines
+    leisure and liveliness with enough time to savor both an exquisite meal and exhibits at the Louvre. Awaken your spirit at Notre Dame,
+    bargain hunt at the Marché aux Puces de Montreuil or for goodies at the Marché Biologique Raspail, then cap it all off with a risqué
+    show at the Moulin Rouge.", :image => "https://i.imgur.com/LMswM2C.jpg"})
+
+        i8 = Item.create({:name=>"Crete, Greece", :price => 3.20, :description => "The birthplace of both the king of the Olympian gods and of modern European
+    civilization, Crete is a Mediterranean jewel. It’s rich with archaeological and mythological history that’s reflected in its ancient
+    ruins and cultural attractions. Soak up the charming atmosphere of Chania Town’s Old Venetian Harbor or the fortresses and monasteries
+    of Rethymonon. The awesome Minoan ruins of Malia date to 1900 BC, and majestic Mt. Ida is said to be home to the cave where Zeus was
+    born.", :image => "https://i.imgur.com/1e5jgcz.jpg"})
+
+            i9 = Item.create({:name=>"Siem Reap, Cambodia", :price => 11.20, :description => "When the morning light washes over the overgrown temples and ruins of
+    Angkor Wat, a simple Siem Reap sunrise becomes a profound event. The ancient structures are contained within one of the largest religious
+    complexes in the world. The complex and the 12th century Angkor Thom royal city are considered the main reasons to visit Siem Reap. Get a
+    lesson in national history at the Cambodian Cultural Village, and a lesson in bargaining at the Angkor Night Market, a bonanza of shopping
+    stalls, food vendors, and bars.", :image => "https://i.imgur.com/8L8u2GJ.jpg"})
+
+
 
 puts "#{ Item.count } items created."
 

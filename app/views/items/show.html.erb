@@ -1,12 +1,12 @@
 <%= link_to "Back", items_path %>
 <h1><%= @item.name %></h1>
-  <div class="flex">
-    <div class="description">
+  <div class="grid">
+    <div class="g-col-6">
       <%= image_tag @item.image, :class =>  'feature' if @item.image.present? %>
     </div>
       <br>
       <div class="description">
-        <% if @item.user.present? %>
+        <% if @item.user.present? %> # if the user is present
 
 
         <% end %>
@@ -17,13 +17,13 @@
 
               <ul>
                 <li>Name: <%= @item.name %></li>
-                <li>Price: <%= @item.price %></li>
+                <li>Price: $<%= @item.price %>/per 2 days</li>
 
               </ul>
 
 
-                <div class="items-icons">
-                    <%= button_to "Add  to cart", line_items_path(:item_id => @item.id), :method => 'post' %>
+                <div class="btn-group">
+                    <%= button_to "Add  to cart", line_items_path(:item_id => @item.id), :method => 'post', :class=>"btn btn-success" %>
                     </div>
 
 

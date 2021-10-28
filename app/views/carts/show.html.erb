@@ -5,7 +5,7 @@
           <% @cart.line_items.each do |line_item| %>
             <div class="card">
             <% if line_item.item %>
-              <%= image_tag(line_item.item.image, :class => 'icon')  %>
+              <%= image_tag(line_item.item.image, :class => 'last')  %>
               <br>
                <%= link_to line_item.item.name, item_path(line_item.item_id) %>
               <br>
@@ -23,7 +23,10 @@
 
     </div>
 <hr>
-
+<div class="pri">
 <h3>Total Price: <%= number_to_currency(@cart.total) %> </h3>
-<%= link_to 'Proceed to check out', new_order_path %>
-<%= link_to 'Empty cart', cart_path(@current_cart), method: :delete, data: {confirm: "Are you sure?"} %>
+</div>
+<div class="but">
+<%= button_to 'Proceed to check out', new_order_path , :class=>"btn btn-primary"%>
+<%= button_to 'Empty cart', cart_path(@current_cart), method: :delete, data: {confirm: "Are you sure?"} ,:class=>"btn btn-success" %>
+</div>
