@@ -1,4 +1,5 @@
-
+<!-- link_to helper renders a link with its first argument
+as the link's text and its second argument as the link's destination. -->
 
 <div class="container-fluid text-center">
     <div class="h1">Destinations on Nomadic</div>
@@ -18,7 +19,7 @@
                 <div class="card-block">
                     <div class="card-title h3">Paris, France</div>
 <%= link_to "Explore", item_path(@items.find_by(name: "Paris, France").id), :class => "btn btn-primary" %>
-                    
+
                 </div>
             </div>
         </div>

@@ -31,10 +31,11 @@ private
     end
   end
 
-  def check_for_admin # admin action -optional 
+  def check_for_admin # admin action -optional
     redirect_to login_path unless (@current_user.present? && @current_user.admin?)
   end
 
+# helper
  def current_cart
     if session[:cart_id] #If a session[:cart_id] already exists then find the Cart with that id, if there is no cart with that id then set the session id to nil.
       cart = Cart.find_by :id => session[:cart_id]

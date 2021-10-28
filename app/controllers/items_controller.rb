@@ -4,15 +4,17 @@ class ItemsController < ApplicationController
 
 
   def index
-    @items = Item.all
+    @items = Item.all #fetch all items from the database:
+    #Controller instance variables can be accessed by the view
   end
 
+# create
   def new
     @item = Item.new
   end
 
 
-
+# in case if we want to add items -optional
   def create
     @item = item.create(item_params)
     redirect_to items_path
@@ -29,6 +31,8 @@ class ItemsController < ApplicationController
   # The params object is a container that enables you to pass values between method calls.
 
   def show
+    # The show action calls item.find  with the ID captured by the route parameter.
+    # The returned item is stored in the @item instance variable, so it is accessible by the view
     @item = Item.find params[:id]
     @user = @item.user
   end
@@ -40,7 +44,7 @@ class ItemsController < ApplicationController
   end
 
   private
-  def item_params
+  def item_params #strong params
     params.require(:item).permit(:name, :price, :description)
   end
 end

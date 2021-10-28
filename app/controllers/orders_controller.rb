@@ -12,7 +12,7 @@ class OrdersController < ApplicationController
     @order = Order.new order_params
     @current_cart.line_items.each do |item|
       @order.line_items << item #append each item as line item in the order
-      item.cart_id = nil
+      item.cart_id = nil # stops the line items being deleted after the cart is destroyed
     end
     @order.save
     Cart.destroy session[:cart_id]

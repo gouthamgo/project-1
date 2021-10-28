@@ -201,9 +201,7 @@ engines (-webkit for Chrome, Safari; -moz for Firefox, -o for Opera, -ms for Int
     position: relative;
     width: 100%;
     overflow: hidden;
-    -webkit-transition: var(--trans);
-    -o-transition: var(--trans);
-    transition: var(--trans);
+
 }
 .featured-item::after{
     content: "";
@@ -227,9 +225,7 @@ engines (-webkit for Chrome, Safari; -moz for Firefox, -o for Opera, -ms for Int
     -webkit-transform: translateY(68%);
 
             transform: translateY(68%);
-    -webkit-transition: var(--trans);
-    -o-transition: var(--trans);
-    transition: var(--trans);
+
 }
 .featured-item-content span{
     font-size: 1.2rem;
@@ -239,9 +235,7 @@ engines (-webkit for Chrome, Safari; -moz for Firefox, -o for Opera, -ms for Int
 }
 .featured-item-content .text{
     color: #fff;
-    -webkit-transition: var(--trans);
-    -o-transition: var(--trans);
-    transition: var(--trans);
+    
 }
 .featured-item:hover .featured-item-content{
     -webkit-transform: translateY(0);

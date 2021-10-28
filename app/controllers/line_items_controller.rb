@@ -2,9 +2,9 @@ class LineItemsController < ApplicationController
 
   def create
     #find the associated item and current cart
-    chosen_item = Item.find(params[:item_id])
-    current_cart = @current_cart
-    @line_item = LineItem.new
+    chosen_item = Item.find(params[:item_id])#find the item by id
+    current_cart = @current_cart # store the current cart
+    @line_item = LineItem.new #create a new line item 
       @line_item.cart = current_cart
       @line_item.item = chosen_item
       # Save and redirect to cart show path
