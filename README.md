@@ -47,3 +47,6 @@ Visit here: https://projectshop1.herokuapp.com/
 2. Implement an administrator function to modify and update products.
 3. Adding more models to improve the user interaction
 4. imporve functionality and front end desgin
+
+
+## Thanks to Rowena and Pat 
