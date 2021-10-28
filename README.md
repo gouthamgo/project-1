@@ -1,24 +1,46 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+
+
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version -ruby 2.7.4
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
 
-* ...
+# Nomadic
+- Nomadic is a concept e-commerce full-stack application built with Ruby on Rails and other technologies.
+- I made this full-stack CRUD app with a concept of a shopping cart for my second project of General Assembly's Software Engineering Immersive Program. 
+- The project is deployed on Heroku.
+
+Visit here: https://projectshop1.herokuapp.com/
+
+## About
+- Nomadic is my first Ruby on Rails project. 
+- It has a user model, order model, line-item model, product model, and cart model. 
+- It includes a sign up/log in functionality and a shopping cart that stores items. 
+
+## The Design
+
+
+## Technologies Used
+1. Ruby on Rails
+2. PostgreSQL
+3. JavaScript and jQuery
+4. Bootstrap
+5. CSS
+
+## Installation Instructions
+1. Clone the repo from your terminal ```git clone https://github.com/gouthamgo/project-1.git```
+2. Create the database: ```rails db:create```
+3. Migrate the database: ```rails db:migrate```
+4. Seed the database: ```rails db:seed```
+5. Run the rails server: ```rails server```
+6. Connect to rails server from the browser: ```localhost:3000```
+
+## Next Steps
+1. Implement a payment function
+2. Implement an administrator function to modify and update products.
+3. Adding more models to improve the user interaction
+4. imporve functionality and front end desgin
