@@ -5,6 +5,7 @@ class OrdersController < ApplicationController
 
   def new
     @order = Order.new
+    # The above method will be called when you will display a page to the user to take user input.
   end
 
   def create

@@ -1,3 +1,5 @@
+
+
 <h2>Your order</h2>
 <div class="order-form">
 <% @current_cart.line_items.each do |line_item| %>
@@ -27,7 +29,7 @@
     <%= f.text_area :address, :placeholder => 'Address',:class=> 'form-control' %>
 
 
-    <%= f.submit "Checkout", :class=> 'submit' %>
+    <%= f.submit "Checkout", :class=>"btn btn-dark" %>
 
 <% end %>
 </div>

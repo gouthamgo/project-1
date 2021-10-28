@@ -1,5 +1,7 @@
 class PagesController < ApplicationController
   def home
-    @item = Item.all
+    @items = Item.all
+    # item method tells Rails to
+    # search the items table and store each row it finds in the @items instance object.
   end
 end

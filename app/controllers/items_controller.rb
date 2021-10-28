@@ -1,5 +1,6 @@
 class ItemsController < ApplicationController
   before_action :check_for_login, except: [:index]
+  # authorise action before going to buy something
 
 
   def index
@@ -22,6 +23,10 @@ class ItemsController < ApplicationController
   end
 
 
+  # The show method's @item = Item.find(params[:id]) line tells Rails to find only
+  # the item that has the id defined in params[:id].
+
+  # The params object is a container that enables you to pass values between method calls.
 
   def show
     @item = Item.find params[:id]
