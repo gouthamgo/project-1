@@ -1,4 +1,4 @@
-
+#Project 1 of the SEI course 
 
 
 
@@ -22,6 +22,9 @@ Visit here: https://projectshop1.herokuapp.com/
 - It includes a sign up/log in functionality and a shopping cart that stores items. 
 
 ## The Design
+![](IMG-0063.jpg)
+![](IMG-0064.jpg)
+![](IMG-0065.jpg)
 
 
 ## Technologies Used
