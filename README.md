@@ -22,7 +22,7 @@ Visit here: https://projectshop1.herokuapp.com/
 - It includes a sign up/log in functionality and a shopping cart that stores items. 
 
 ## Overview and Features
-Howie's workflow notes for building a simple Rails grocery shopping cart. Summary features outlined below:
+Howie's workflow notes for building a simple Rails shopping cart. Summary features outlined below:
 
 * **User is able to:**
   - View all products
