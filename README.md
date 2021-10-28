@@ -21,6 +21,17 @@ Visit here: https://projectshop1.herokuapp.com/
 - It has a user model, order model, line-item model, product model, and cart model. 
 - It includes a sign up/log in functionality and a shopping cart that stores items. 
 
+## Overview and Features
+Howie's workflow notes for building a simple Rails grocery shopping cart. Summary features outlined below:
+
+* **User is able to:**
+  - View all products
+  - Add/ remove products to/ from cart
+  - Checkout cart by submitting order
+  - Enter order details   
+  - User authentication
+
+
 ## The Design
 ![](IMG-0063.jpg)
 ![](IMG-0064.jpg)
