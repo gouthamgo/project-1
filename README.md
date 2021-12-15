@@ -7,6 +7,12 @@ Things you may want to cover:
 * Ruby version -ruby 2.7.4
 
 
+
+
+https://user-images.githubusercontent.com/24316133/146149130-3003b91d-c9db-40db-8419-a785287765d8.mp4
+
+
+
 * Deployment instructions
 
 # Nomadic
