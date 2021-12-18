@@ -1,6 +1,7 @@
 #Project 1 of the SEI course 
 
 
+![p1](https://user-images.githubusercontent.com/24316133/146634189-0f9023f2-6ed3-4483-afa7-021f0db05970.png)
 
 Things you may want to cover:
 
